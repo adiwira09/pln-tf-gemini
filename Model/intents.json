@@ -1,0 +1,562 @@
+{
+   "intents":[
+      {
+         "tag": "greeting",
+         "patterns": [
+            "Hi",
+            "Hai",
+            "Halo",
+            "Selamat Pagi",
+            "Selamat Malam",
+            "Selamat Sore",
+            "Selamat Siang"
+         ],
+         "responses": [
+            "Halo! Saya adalah bot PLN yang siap membantu menjawab pertanyaan Anda mengenai informasi terkait permasalahan listrik atau kendala yang Anda alami pada aplikasi PLN Mobile."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "goodbye",
+         "patterns": [
+            "Terimakasih",
+            "Sampai Jumpa",
+            "See you later",
+            "Goodbye",
+            "I am Leaving",
+            "Bye",
+            "Makasih"
+         ],
+         "responses": [
+            "Terima kasih telah mengunjungi saya! Jika ada pertanyaan lagi, jangan ragu untuk kembali. Sampai jumpa!"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Perbandingan_Biaya_Pemasangan_Listrik",
+         "patterns": [
+            "Apakah biaya token listrik lebih mahal jika mendaftar langsung ke PLN dibandingkan melalui pihak ketiga?",
+            "Apakah penggunaan token listrik menjadi lebih boros jika pemasangan dilakukan langsung ke PLN daripada menggunakan calo?",
+            "Benarkah jika pemasangan listrik dilakukan langsung ke PLN, maka konsumsi token akan lebih tinggi dibandingkan jika melalui pihak ketiga?",
+            "Adakah perbedaan dalam penggunaan token listrik antara pemasangan yang dilakukan langsung ke PLN dan melalui jasa calo?",
+            "Apakah token listrik akan lebih cepat habis saat melakukan pemasangan langsung ke PLN dibandingkan dengan melalui perantara?",
+            "Apakah biaya token listrik lebih rendah jika memasang listrik melalui perantara daripada langsung ke PLN?",
+            "Benarkah jika pemasangan listrik dilakukan lewat calo, token listrik akan lebih hemat dibandingkan dengan pemasangan langsung?",
+            "Apakah ada keuntungan dalam hal penghematan token listrik jika memilih untuk memasang listrik melalui pihak ketiga?",
+            "Seberapa besar pengaruh cara pemasangan listrik terhadap konsumsi token listrik?",
+            "Apakah benar pemasangan listrik langsung ke PLN mengakibatkan penggunaan token listrik yang lebih tinggi?"
+         ],
+         "responses": [
+            "Sebenarnya, hemat tidaknya token listrik prabayar tidak ada kaitannya dengan pasang sendiri ke PLN ataupun lewat calo (mitra PLN). Hemat tidaknya penggunaan listrik tergantung dari 2 hal : Jenis kWh meternya. Apakah termasuk kWh meter subsidi atau non subsidi dan Jumlah beban listrik dan lama waktu pemakaian nya. Pelanggan dengan kWh meter subsidi jelas akan lebih irit penggunaan listriknya dibanding pelanggan non subsidi."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Hubungan_MCB_dan_Biaya_Listrik",
+         "patterns": [
+            "Apakah mengganti MCB dengan ukuran lebih besar pada kWh meter akan meningkatkan biaya listrik?",
+            "Jika kapasitas MCB ditingkatkan, apakah akan ada kenaikan pada tagihan listrik?",
+            "Apakah penggunaan MCB berkapasitas lebih besar pada kWh meter dapat mempengaruhi jumlah tagihan listrik?",
+            "Apakah penggantian MCB dengan yang lebih besar dapat berakibat pada peningkatan biaya listrik?",
+            "Apakah tagihan listrik akan bertambah jika ukuran MCB pada kWh meter diganti dengan yang lebih besar?",
+            "Apakah memasang MCB yang lebih besar pada kWh meter akan berdampak pada biaya listrik yang harus dibayar?",
+            "Jika MCB diupgrade ke kapasitas yang lebih tinggi, apakah tagihan listrik akan mengalami perubahan?",
+            "Apakah penggunaan MCB yang lebih besar pada kWh meter bisa menyebabkan peningkatan tagihan listrik?",
+            "Apakah ada risiko tagihan listrik yang lebih tinggi jika MCB pada kWh meter diganti dengan yang lebih besar?",
+            "Bagaimana penggantian MCB dengan ukuran lebih besar dapat mempengaruhi biaya listrik yang dibayarkan?"
+         ],
+         "responses": [
+            "Sebelum membahas dampak penggantian MCB pada kWh meter terhadap tagihan listrik, penting untuk diketahui bahwa mengganti MCB secara sembarangan adalah tindakan melanggar hukum, sesuai dengan pasal 362 KUHP dan UU Ketenagalistrikan No. 30 Tahun 2009 pasal 51 (ayat 3), yang dapat berakibat pidana penjara hingga tujuh tahun dan denda maksimal Rp2,5 miliar. Pada masa penggunaan kWh meter analog, penggantian MCB sering dilakukan untuk menggunakan listrik tanpa batasan daya, karena meter analog tidak memiliki sistem proteksi seperti meter prabayar. Pada kWh meter prabayar, membuka cover akan menyebabkan meter berhenti bekerja, dan meningkatkan rating MCB tidak efektif karena daya yang digunakan sudah diatur secara elektronik. Meskipun kWh meter analog lebih mudah dimodifikasi, tindakan ini tetap dapat terdeteksi oleh pihak PLN, sehingga sebaiknya dihindari."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Peningkatan_Rating_MCB",
+         "patterns": [
+            "Apakah tagihan listrik saya akan bertambah jika saya mengganti rating MCB?",
+            "Apakah menaikkan rating MCB akan mempengaruhi biaya listrik saya?",
+            "Jika saya meningkatkan rating MCB, apakah itu berdampak pada tagihan listrik?",
+            "Apa pengaruhnya terhadap jumlah tagihan jika saya mengganti MCB dengan rating yang lebih tinggi?",
+            "Meningkatkan rating MCB, apakah itu menyebabkan lonjakan biaya tagihan listrik?",
+            "Apakah ada perubahan pada biaya listrik jika rating MCB saya tingkatkan?",
+            "Bagaimana kenaikan rating MCB berpengaruh terhadap tagihan listrik?",
+            "Apakah mengganti MCB dengan yang berkapasitas lebih besar akan menaikkan tagihan?",
+            "Dampak apa yang ditimbulkan jika saya mengganti rating MCB di meteran?",
+            "Apakah tagihan listrik saya akan terpengaruh jika saya mengubah rating MCB?"
+         ],
+         "responses": [
+            "Mengganti MCB pada kWh meter analog dengan rating yang lebih besar akan meningkatkan kapasitas daya yang dapat ditangani oleh meter. Misalnya, mengganti MCB 2 ampere pada meter 450 VA dengan MCB 4 ampere akan menaikkan kapasitas daya menjadi 900 VA. Ini memungkinkan lebih banyak beban listrik yang bisa digunakan, sehingga pemakaian listrik meningkat. Karena MCB yang lebih besar tidak akan trip hingga arus mencapai batas yang lebih tinggi, penggunaan daya yang lebih besar akan menyebabkan kenaikan tagihan listrik."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Kegagalan_Input_Token_Listrik",
+         "patterns": [
+            "Kenapa token listrik yang saya masukkan ke meteran selalu gagal?",
+            "Mengapa saya mengalami kesulitan saat memasukkan token listrik ke meteran?",
+            "Apa alasan token listrik tidak dapat diterima oleh meteran?",
+            "Mengapa proses input token listrik saya sering kali gagal?",
+            "Apa penyebab utama gagalnya input token listrik pada meteran?",
+            "Mengapa token listrik yang saya input tidak berhasil?",
+            "Apa yang menyebabkan masalah saat menginput token listrik ke meteran?",
+            "Kenapa meteran listrik saya tidak menerima token yang saya masukkan?",
+            "Apa yang terjadi jika token listrik gagal dimasukkan ke meteran?",
+            "Mengapa saya tidak bisa mengisi token listrik ke dalam meteran saya?"
+         ],
+         "responses": [
+            "Kasus gagal isi token listrik memang banyak terjadi. Hal ini menandakan bahwa kWh meter perlu update KRN (Key register number). Update KRN dilakukan melalui aplikasi KCT (Key change token) mobile oleh petugas PLN. Fungsi melakukan update KRN ini adalah selain agar bisa memasukan token listrik yang sudah dibeli, juga agar pelanggan meter prabayar tidak diblokir pada tahun 2024 karena belum update KRN."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Usia_KWH_Meter",
+         "patterns": [
+            "Berapa usia kWh meter yang perlu ditera ulang atau diganti sesuai aturan PLN?",
+            "Kapan sebaiknya kWh meter diganti berdasarkan usia pemakaian menurut PLN?",
+            "Apa batas usia maksimal kWh meter untuk tetap digunakan tanpa harus diganti?",
+            "Berapa lama seharusnya kWh meter bertahan sebelum perlu ditera ulang?",
+            "Menurut PLN, berapa usia kWh meter yang dianggap sudah tidak akurat lagi?",
+            "Apa yang terjadi jika kWh meter berusia lebih dari 10 atau 15 tahun?",
+            "Kapan kita perlu mempertimbangkan untuk mengganti kWh meter?",
+            "Apa rekomendasi PLN tentang usia penggunaan kWh meter?",
+            "Apakah ada kriteria khusus untuk mengganti kWh meter setelah 10 tahun?",
+            "Bagaimana cara mengetahui apakah kWh meter sudah harus diganti atau ditera ulang?"
+         ],
+         "responses": [
+            "Menurut keterangan PLN, kWh meter yang sudah berusia di atas 10 tahun (prabayar) dan 15 tahun (pascabayar) harus ditera ulang atau ganti baru karena dikhwatirkan sudah tidak lagi akurat dalam mengukur pemakaian energi listrik. Jika kWh meter tidak akurat, maka akan ada pihak yang akan dirugikan. Entah itu kita sebagai pelanggan PLN atau PLN itu sendiri."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Legalitas_Penggunaan_KWH_Meter",
+         "patterns": [
+            "Bolehkah saya menggunakan kWh meter yang terdaftar atas nama orang lain?",
+            "Apakah diperbolehkan memakai kWh meter dengan NIK yang berbeda?",
+            "Bisakah kWh meter milik orang lain digunakan tanpa izin?",
+            "Apakah sah menggunakan kWh meter yang bukan atas nama saya?",
+            "Bagaimana hukum penggunaan kWh meter terdaftar atas nama orang lain?",
+            "Apakah ada risiko menggunakan kWh meter milik orang lain?",
+            "Apakah saya bisa memakai kWh meter yang terdaftar atas NIK orang lain?",
+            "Apa saja konsekuensi jika menggunakan kWh meter orang lain?",
+            "Apakah penggunaan kWh meter dengan NIK orang lain diperbolehkan?",
+            "Jika NIK saya digunakan tanpa izin untuk kWh meter, apa yang harus saya lakukan?"
+         ],
+         "responses": [
+            "Secara teknis, menggunakan kWh meter atas nama orang lain, terutama prabayar, memang memungkinkan dan banyak terjadi, terutama pada kWh meter subsidi. Orang yang mampu sering kali mencari kWh meter subsidi untuk menghemat biaya, meskipun itu seharusnya diperuntukkan bagi orang lain yang berhak. Jika NIK Anda digunakan untuk kWh meter tanpa sepengetahuan Anda, Anda bisa melaporkan hal tersebut ke PLN untuk mengambil alih meteran tersebut."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Penggunaan_Listrik_Bersama",
+         "patterns": [
+            "Apakah diperbolehkan berbagi listrik dengan tetangga menurut peraturan PLN?",
+            "Apa aturan PLN mengenai penggunaan listrik bersama tetangga?",
+            "Bolehkah saya memberikan sambungan listrik ke tetangga saya?",
+            "Bagaimana peraturan PLN terkait berbagi listrik dengan tetangga?",
+            "Apa ketentuan PLN tentang berbagi listrik dengan tetangga?",
+            "Dapatkah saya menyediakan sambungan listrik ke rumah tetangga saya?",
+            "Apakah berbagi listrik dengan tetangga melanggar aturan PLN?",
+            "Bolehkah saya menggunakan listrik bersama tetangga jika daya cukup?",
+            "Apakah PLN melarang tentang sambungan listrik ke tetangga?",
+            "Bolehkah tetangga menggunakan listrik saya menurut kebijakan PLN?"
+         ],
+         "responses": [
+            "Tidak ada aturan yang melarang anda untuk berbagi listrik dengan tetangga selama bukan mencuri listrik atau hal-hal yang dilarang lainnya. Jika anda memiliki kWh meter dengan kapasitas daya yang besar, dan secara aktual bisa digunakan dengan tetangga secara bersamaan ya silahkan saja."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Pasang_Listrik_Baru_Setelah_Pemutusan",
+         "patterns": [
+            "Jika listrik saya diputus karena denda P2TL, apakah saya bisa memasang listrik baru tanpa membayar denda?",
+            "Bagaimana prosedur pemasangan listrik baru setelah pemutusan akibat denda P2TL?",
+            "Apakah saya bisa memasang listrik baru setelah pemutusan karena belum bayar denda P2TL?",
+            "Apakah ada cara memasang kembali listrik tanpa melunasi denda P2TL setelah pemutusan?",
+            "Bolehkah saya memasang listrik baru setelah pemutusan akibat denda P2TL yang belum dibayar?",
+            "Dapatkah saya memasang listrik kembali setelah dicabut karena denda P2TL?",
+            "Apakah bisa memasang kWh meter baru tanpa bayar denda P2TL setelah listrik diputus?",
+            "Jika listrik sudah diputus karena denda P2TL, apakah saya masih bisa pasang kembali tanpa melunasi denda?",
+            "Apakah ada opsi untuk mendapatkan sambungan listrik baru tanpa membayar denda P2TL setelah pemutusan?",
+            "Apakah mungkin pasang listrik baru setelah pencabutan akibat denda P2TL yang belum diselesaikan?"
+         ],
+         "responses": [
+            "Tidak bisa. Jika anda mengalami P2TL karena alasan menunggak atau kecurangan-kecurangan lainnya, maka anda harus selesaikan dulu urusan dengan PLN, baik itu denda dll baru bisa ajukan pemasangan kWh meter baru lagi."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Prosedur_Penggunaan_Token_Listrik",
+         "patterns": [
+            "Apakah token yang sudah dibeli bisa dipakai di meteran lain jika belum digunakan?",
+            "Bolehkah token listrik prabayar yang tidak terpakai dipindahkan ke meteran lain?",
+            "Jika saya membeli token listrik, bisakah saya menggunakannya pada kWh meter yang berbeda?",
+            "Bisakah token listrik prabayar yang belum digunakan dipakai di kWh meter lain?",
+            "Token listrik yang belum dipakai, apakah dapat dipakai pada meteran lain?",
+            "Apakah token listrik prabayar dapat dipakai di meteran lain jika belum terpakai?",
+            "Dapatkah saya menggunakan token listrik yang belum dipakai pada kWh meter berbeda?",
+            "Jika token listrik belum dipakai, bisakah diinput ke meteran kWh lain?",
+            "Bolehkah token listrik prabayar dipindahkan ke meteran lain jika tidak terpakai?",
+            "Apakah token listrik bisa digunakan pada meteran lain selain yang didaftarkan jika belum digunakan?"
+         ],
+         "responses": [
+            "Tidak bisa. Jika anda membeli token listrik prabayar untuk ID pelanggan tertentu, maka token listrik tersebut tidak akan bisa digunakan pada kWh meter dengan ID pelanggan yang lain. Token tersebut hanya bisa digunakan pada kWh meter dengan ID yang sesuai saat token tersebut dibeli."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Penggunaan_NIK_Untuk_Pembelian_Listrik",
+         "patterns": [
+            "Kenapa NIK yang sudah terdaftar di PLN tidak bisa digunakan lagi untuk beli listrik?",
+            "Apa alasan NIK terdaftar di PLN tidak bisa dipakai lagi untuk pembelian listrik?",
+            "Mengapa NIK saya yang sudah terdaftar tidak bisa digunakan untuk membeli listrik lagi?",
+            "Apa penyebab NIK yang sudah terdaftar di PLN tidak bisa untuk beli daya listrik lagi?",
+            "Kenapa NIK saya yang sudah terdaftar di PLN tidak valid saat beli listrik?",
+            "Mengapa NIK yang sudah saya daftarkan di PLN tidak bisa dipakai untuk beli listrik lagi?",
+            "Apa alasan NIK yang sudah terdaftar di PLN tidak bisa dipakai untuk beli token listrik?",
+            "Kenapa NIK yang terdaftar di PLN tidak bisa digunakan lagi saat membeli token listrik?",
+            "Apa yang menyebabkan NIK terdaftar di PLN tidak bisa digunakan lagi untuk beli daya?",
+            "Kenapa NIK yang terdaftar tidak bisa dipakai lagi untuk beli listrik di PLN?"
+         ],
+         "responses": [
+            "Karena aturan PLN mengharuskan 1 NIK adalah untuk 1 kWh meter. Jika NIK anda sudah terdaftar tapi nyatanya anda tidak pernah membeli kWh meter, itu artinya NIK anda sudah disalahgunakan. Bisa jadi kWh meter dengan identitas anda saat ini sedang digunakan oleh orang lain di luar sana."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Pemindahan_KWH_Meter_Pribadi",
+         "patterns": [
+            "Bolehkah memindahkan kWh meter sendiri saat pindahan rumah?",
+            "Apakah diperkenankan untuk memindahkan kWh meter pribadi saat pindah rumah?",
+            "Bisakah saya mengatur sendiri pemindahan kWh meter ke rumah baru?",
+            "Bolehkan melakukan pemindahan kWh meter sendiri?",
+            "Apakah diperbolehkan menggeser kWh meter sendiri ke rumah baru?",
+            "Apa saya bisa memindahkan kWh meter ke rumah lain secara mandiri?",
+            "Apakah bisa mengurus pemindahan kWh meter tanpa bantuan PLN?",
+            "Apakah memindahkan kWh meter pribadi bisa dilakukan sendiri saat pindah?",
+            "Bisakah saya memindahkan kWh meter sendiri saat berpindah rumah?",
+            "Apakah saya bisa memindahkan posisi kWh meter saat pindah ke rumah baru?"
+         ],
+         "responses": [
+            "Pada dasarnya, memindahkan posisi kWh meter boleh-boleh saja asalkan masih berada pada rumah/bangunan yang sama. Proses pemindahan pun tidak bisa sembarangan. Harus dilakukan oleh petugas PLN."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Persyaratan_Pindah_KWH_Meter",
+         "patterns": [
+            "Apa saja dokumen yang dibutuhkan untuk memindahkan kWh meter?",
+            "Apa yang perlu dipersiapkan untuk pemindahan kWh meter?",
+            "Bagaimana langkah-langkah dalam mengurus pemindahan kWh meter?",
+            "Apa prosedur yang harus diikuti untuk memindahkan kWh meter?",
+            "Apa saja syarat dokumen untuk pemindahan kWh meter?",
+            "Apa yang harus saya siapkan untuk memindahkan kWh meter?",
+            "Apa saja persyaratan dokumen yang diperlukan untuk pindah kWh meter?",
+            "Apa tahapan yang perlu dilakukan untuk memindahkan kWh meter?",
+            "Bagaimana proses pengurusan pemindahan kWh meter?",
+            "Dokumen apa yang dibutuhkan untuk memproses pemindahan kWh meter?"
+         ],
+         "responses": [
+            "1. Nomor ID (no meter) Pelanggan; 2. Nama lengkap berikut nomor identitas pemilik (sesuai KTP); 3. Alamat lokasi rumah posisi kWh meter saat ini; 4. Nomor telepon aktif; 5. Apabila dikuasakan, dilengkapi surat kuasa bermaterai berikut nama, alamat, nomor telepon yang aktif, dan nomor identitas pemohon (sesuai KTP); 6. Jika berkas dan persyaratan sudah lengkap, anda bisa menghubungi pihak PLN setempat; 7. Biaya pindah kWh meter kisaran Rp. 50.000."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Pemindahan_KWH_Meter_Lintas_Rumah",
+         "patterns": [
+            "Apa prosedur untuk memindahkan kWh meter ke lokasi baru?",
+            "Bagaimana jika ingin menggeser kWh meter ke rumah lain?",
+            "Apa yang harus dilakukan untuk pindah kWh meter ke rumah yang berbeda?",
+            "Apakah mungkin memindahkan kWh meter ke alamat yang lain?",
+            "Apakah diperbolehkan memindahkan kWh meter dari satu rumah ke rumah lain?",
+            "Bagaimana cara memproses pemindahan kWh meter ke tempat baru?",
+            "Apakah kWh meter bisa dipindahkan ke rumah lain?",
+            "Apakah saya bisa membawa kWh meter ke rumah baru?",
+            "Apakah memungkinkan untuk memindahkan kWh meter ke lokasi yang berbeda?",
+            "Apa yang harus saya lakukan jika ingin memindahkan kWh meter ke rumah baru?"
+         ],
+         "responses": [
+            "PLN tidak membolehkan pemindahan kWh meter lintas rumah. Artinya jika ingin memasang kWh meter di sebuah rumah yang baru, anda harus mengajukan pemasangan (pembelian) kWh meter baru."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "KWH_Meter_Minus",
+         "patterns": [
+            "Kenapa saldo kWh meter bisa menjadi negatif?",
+            "Apa yang menyebabkan meteran listrik menunjukkan angka minus?",
+            "Bagaimana bisa angka di kWh meter menjadi negatif?",
+            "Apa yang memicu nilai negatif pada kWh meter?",
+            "Kenapa meteran listrik saya tidak menunjukkan saldo positif?",
+            "Mengapa token listrik saya menjadi minus di meteran?",
+            "Apa yang harus dilakukan jika kWh meter menunjukkan angka negatif?",
+            "Bagaimana cara mengatasi kondisi saldo negatif pada kWh meter?",
+            "Apa yang membuat saldo kWh meter saya minus?",
+            "Apakah mungkin memperbaiki kWh meter dengan angka minus?"
+         ],
+         "responses": [
+            "Kondisi token listrik yang minus bisa terjadi, terutama pada kWh meter Itron EM512 yang diprogram dengan kredit negatif. Ketika saldo kredit mencapai nol dan catu daya tidak terputus, meteran akan menampilkan kredit negatif. Artinya, Anda memiliki utang pulsa akibat masalah teknis. Saat Anda membeli dan memasukkan token baru, saldo negatif tersebut akan otomatis terbayar. Namun, jika kWh meter Anda mengalami kondisi ini, disarankan untuk melaporkannya ke PLN agar dapat dilakukan perbaikan."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Penyebab_KWH_Meter_Error",
+         "patterns": [
+            "Mengapa kWh meter bisa menampilkan tulisan PERIKSA?",
+            "Apa yang menyebabkan kWh meter muncul peringatan PERIKSA?",
+            "Kenapa ada tulisan PERIKSA di kWh meter?",
+            "Apa alasan kWh meter menunjukkan pesan PERIKSA?",
+            "Bagaimana bisa muncul tulisan PERIKSA pada kWh meter?",
+            "Mengapa di kWh meter muncul pesan PERIKSA?",
+            "Apa faktor yang membuat kWh meter menunjukkan PERIKSA?",
+            "Kenapa kWh meter memperlihatkan tulisan PERIKSA?",
+            "Apa yang menyebabkan pesan PERIKSA muncul di kWh meter?",
+            "Kenapa tiba-tiba ada tulisan PERIKSA di kWh meter?"
+         ],
+         "responses": [
+            "1. Pelanggan melepas segel dan membuka Cover kWh meter, baik dalam kondisi meter ON maupun OFF (sering); 2. Terdapat arus bocor ke tanah (sering); 3. Terjadi benturan keras pada body kWh meter (jarang); 4. kWh meter habis dipindahkan tanpa membuka cover meter (Pindah koordinat)."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Cara_Cek_Kebocoran_Arus_KWH_Meter_Prabayar",
+         "patterns": [
+            "Bagaimana cara mengetahui ada kebocoran arus di kWh Meter Prabayar?",
+            "Apa langkah-langkah untuk memeriksa kebocoran arus di kWh Meter Prabayar?",
+            "Bagaimana cara cek arus bocor di kWh Meter Prabayar?",
+            "Apa yang harus dilakukan untuk mengecek kebocoran arus pada kWh Meter Prabayar?",
+            "Bagaimana prosedur memeriksa kebocoran arus pada kWh Meter Prabayar?",
+            "Apa panduan untuk mengecek kebocoran arus di kWh Meter Prabayar?",
+            "Bagaimana cara memverifikasi arus bocor di kWh Meter Prabayar?",
+            "Apa langkah yang benar untuk memeriksa arus bocor pada kWh Meter Prabayar?",
+            "Bagaimana cara memastikan ada kebocoran arus di kWh Meter Prabayar?",
+            "Apa metode untuk mengecek kebocoran arus di kWh Meter Prabayar?"
+         ],
+         "responses": [
+            "Pastikan semua peralatan listrik di rumah dalam keadaan mati, tanpa terkecuali, untuk memastikan tidak ada beban listrik yang digunakan dan arus tidak mengalir dalam instalasi rumah. Tekan tombol 44 di kWh meter Hexing atau Itron, lalu tekan enter untuk melihat angka yang menunjukkan seberapa besar arus yang mengalir. Jika semua peralatan listrik mati tetapi tetap ada arus, meskipun kecil, itu disebut arus bocor. Setelah Anda menemukan dan memperbaiki titik bocor, lakukan pengecekan kembali dengan cara yang sama. Jika tidak ada arus yang mengalir saat semua peralatan mati, berarti arus bocor sudah tidak ada. Setelah itu, untuk menghilangkan tulisan 'Periksa' pada kWh meter, Anda perlu merestart kWh meter."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Penyebab_Listrik_Spaning",
+         "patterns": [
+            "Kenapa listrik mengalami spaning?",
+            "Apa yang menyebabkan listrik spaning?",
+            "Faktor apa saja yang bisa menyebabkan listrik spaning?",
+            "Apa penyebab tegangan listrik menurun?",
+            "Mengapa tegangan listrik di rumah tiba-tiba turun?",
+            "Apa yang bisa membuat listrik spaning di rumah?",
+            "Kenapa tegangan listrik bisa rendah?",
+            "Apa saja alasan tegangan listrik tidak stabil?",
+            "Penyebab utama listrik spaning itu apa?",
+            "Mengapa listrik di rumah mengalami spaning?"
+         ],
+         "responses": [
+            "1. Konektor kabel twisted PLN di atas rumah mulai mengalami loss kontak; 2. Ada titik di mana kabel twisted panas, meleleh hingga kebakar; 3. Jalur kabel utama menuju rumah kita mengalami voltage drop;"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Kode_Restart_KWH_Meter_Prabayar",
+         "patterns": [
+            "Bagaimana cara merestart kWh meter prabayar?",
+            "Kode apa yang digunakan untuk restart kWh meter prabayar?",
+            "Cara reset kWh meter prabayar bagaimana?",
+            "Apa langkah merestart kWh meter prabayar?",
+            "Bagaimana prosedur untuk restart kWh meter prabayar?",
+            "Kode untuk mereset ulang kWh meter prabayar?",
+            "Bagaimana mereset kWh meter prabayar?",
+            "Apa cara untuk restart kWh meter prabayar?",
+            "Bisakah saya merestart kWh meter prabayar sendiri?",
+            "Kode apa untuk reset ulang kWh meter di rumah?"
+         ],
+         "responses": [
+            "Untuk merestart kWh meter, tekan kode 00 lalu enter, baik pada kWh meter Itron maupun Hexing. Maka kWh meter akan restart. Jika beruntung maka kWh meter anda akan normal kembali, tapi jika eror PERIKSA masih muncul, maka tidak ada pilihan lain selain menghubungi PLN."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Cara_Pasang_Listrik_Baru",
+         "patterns": [
+            "Apa langkah-langkah untuk memasang listrik baru melalui aplikasi PLN mobile ?",
+            "Bagaimana prosedur pemasangan listrik baru melalui aplikasi PLN mobile?",
+            "Apa yang harus dilakukan untuk memasang listrik baru melalui aplikasi PLN mobile?",
+            "Bisa jelaskan cara untuk melakukan pemasangan listrik baru melalui aplikasi PLN mobile?",
+            "Bagaimana saya bisa memasang listrik baru melalui aplikasi PLN mobile?",
+            "Apa saja yang perlu saya lakukan untuk pasang listrik baru melalui aplikasi PLN mobile?",
+            "Bagaimana cara mendaftar untuk pemasangan listrik baru melalui aplikasi PLN mobile?",
+            "Apa yang perlu dilakukan agar listrik baru dapat dipasang melalui aplikasi PLN mobile?",
+            "Langkah-langkah apa yang diperlukan untuk pemasangan listrik baru melalui aplikasi PLN mobile?",
+            "Bagaimana cara saya untuk memasang layanan listrik baru melalui aplikasi PLN mobile?"
+         ],
+         "responses": [
+            "1. Buka aplikasi PLN Mobile; 2. Login menggunakan akun yang telah terdaftar; 3. Pilih menu 'Pasang Baru'; 4. Pilih lokasi pemasangan, isi detail layanan, isi data SLO, pilih token (khusus prabayar) & isi data pelanggan; 5. Klik 'Kirim Permohonan' dan segera lakukan pembayaran; 6. Setelah pembayaran selesai, petugas PLN akan melakukan pemasangan kWh meter di lokasi yang ditentukan."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Cara_Cek_Status_Permohonan",
+         "patterns": [
+            "Bagaimana cara mengetahui status permohonan saya melalui aplikasi PLN mobile?",
+            "Apa langkah untuk cek status permohonan melalui aplikasi PLN mobile?",
+            "Bagaimana cara melihat status permohonan yang sudah diajukan melalui aplikasi PLN mobile?",
+            "Dapatkah Anda jelaskan cara cek status permohonan melalui aplikasi PLN mobile?",
+            "Bagaimana cara mengecek permohonan saya melalui aplikasi PLN mobile?",
+            "Apa yang perlu dilakukan untuk mengecek status permohonan melalui aplikasi PLN mobile?",
+            "Di mana saya bisa melihat status permohonan melalui aplikasi PLN mobile?",
+            "Langkah apa yang harus diambil untuk memeriksa status permohonan melalui aplikasi PLN mobile?",
+            "Bagaimana cara untuk memantau status permohonan melalui aplikasi PLN mobile?",
+            "Apa saja cara untuk mengetahui status permohonan yang telah diajukan melalui aplikasi PLN mobile?"
+         ],
+         "responses": [
+            "1. Pilih menu 'Profil'; 2. Klik Daftar Riwayat; 3. Pilih Permohonan, lalu pilih permohonan yang ingin dicek statusnya; 4. Klik 'Lihat' untuk melihat detail status permohonan;"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Cara_Tambah_Daya_Listrik",
+         "patterns": [
+            "Apa langkah-langkah untuk menambah daya listrik melalui aplikasi PLN mobile?",
+            "Bagaimana proses untuk melakukan penambahan daya listrik melalui aplikasi PLN mobile?",
+            "Bisakah Anda menjelaskan cara untuk menambah daya listrik melalui aplikasi PLN mobile?",
+            "Apa yang harus saya lakukan untuk melakukan penambahan daya listrik melalui aplikasi PLN mobile?",
+            "Bagaimana cara mengajukan permohonan tambah daya listrik melalui aplikasi PLN mobile?",
+            "Apa langkah yang perlu dilakukan untuk memperbesar daya listrik melalui aplikasi PLN mobile?",
+            "Bagaimana cara melakukan perubahan daya listrik melalui aplikasi PLN mobile?",
+            "Apa prosedur untuk menambah daya listrik di rumah melalui aplikasi PLN mobile?",
+            "Bagaimana langkah-langkah menambah daya listrik melalui aplikasi PLN mobile?",
+            "Apa yang harus saya lakukan untuk menambah daya listrik melalui aplikasi PLN mobile?"
+         ],
+         "responses": [
+            "1. Buka aplikasi PLN Mobile; 2. Login menggunakan akun yang telah terdaftar; 3. Pilih menu 'Perubahan Daya' pada halaman utama; 4. Pilih 'Mulai'; 5. Pilih ID pelanggan yang terdaftar atau masukkan ID pelanggan baru; 6. Tentukan koordinat lokasi yang sesuai; 7. Lengkapi data lokasi; 8. Pilih daya baru yang diinginkan, jenis koneksi, dan peruntukan listrik; 9. Isi data pelanggan dan pemohon; 10. Setujui Syarat dan Ketentuan; 11. Pilih metode pembayaran dan lakukan pembayaran;"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Cara_Pembelian_Token_Listrik",
+         "patterns": [
+            "Apa langkah-langkah untuk membeli token listrik melalui aplikasi PLN mobile?",
+            "Bagaimana proses pembelian token listrik melalui aplikasi PLN mobile?",
+            "Dapatkah Anda menjelaskan cara membeli token listrik melalui aplikasi PLN mobile?",
+            "Apa yang harus dilakukan untuk membeli token listrik melalui aplikasi PLN mobile?",
+            "Bagaimana cara melakukan pembelian token listrik menggunakan aplikasi PLN Mobile?",
+            "Apa saja tahapan untuk membeli token listrik melalui aplikasi PLN mobile?",
+            "Bagaimana cara saya membeli token listrik melalui aplikasi PLN mobile?",
+            "Apa yang perlu saya lakukan untuk membeli token listrik melalui aplikasi PLN mobile?",
+            "Bagaimana cara membeli token listrik melalui aplikasi PLN mobile?",
+            "Bisa tolong jelaskan cara beli token listrik melalui aplikasi PLN mobile?"
+         ],
+         "responses": [
+            "1. Buka aplikasi PLN Mobile; 2. Pilih menu “Token & Pembayaran”; 3. Kemudian, masukkan nomor IDPEL atau nomor meteran yang akan diisi token listrik. Pastikan bahwa IDPEL atau nomor meteran tersebut sesuai; 4. Setelah itu, pilih “Beli Token”; 5. Pilih harga token yang ingin Anda beli, kemudian pilih “Lanjutkan Pembayaran”; 6.  Pilih metode pembayaran, lalu selesaikan pembayaran listrik dengan instruksi yang tersedia di aplikasi PLN Mobile;"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Perbedaan_Biaya_Tagihan_Listrik",
+         "patterns": [
+            "Kenapa tagihan listrik saya bulan ini lebih tinggi dari bulan lalu?",
+            "Apa alasan di balik kenaikan tagihan listrik saya bulan ini?",
+            "Mengapa biaya listrik saya bulan ini lebih mahal dibandingkan bulan sebelumnya?",
+            "Apakah ada sebab spesifik mengapa tagihan listrik saya bulan ini lebih besar?",
+            "Mengapa saya mendapatkan tagihan listrik yang lebih tinggi bulan ini?",
+            "Apa yang membuat tagihan listrik saya naik bulan ini?",
+            "Mengapa biaya listrik yang saya terima bulan ini lebih tinggi?",
+            "Kenapa ada perbedaan biaya tagihan listrik antara bulan ini dan bulan lalu?",
+            "Apa penyebab tagihan listrik saya membengkak bulan ini?",
+            "Bagaimana bisa tagihan listrik saya lebih tinggi bulan ini dibanding bulan sebelumnya?"
+         ],
+         "responses": [
+            "Biaya listrik dapat bervariasi setiap bulan tergantung pada penggunaan energi, adanya tarif baru, atau penyesuaian harga dari PLN."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Biaya_Tambahan",
+         "patterns": [
+            "Mengapa saya harus membayar biaya tambahan yang tidak saya ketahui?",
+            "Apa penyebab adanya biaya tambahan yang tidak diinformasikan sebelumnya?",
+            "Bisakah Anda menjelaskan alasan di balik biaya tambahan yang tidak saya sadari?",
+            "Apa yang mendasari tagihan yang mencantumkan biaya tambahan?",
+            "Kenapa saya dikenakan biaya tambahan yang tidak terdaftar di tagihan saya?",
+            "Adakah alasan tertentu mengapa ada biaya tambahan yang tidak saya ketahui?",
+            "Mengapa ada biaya tambahan yang tidak dicantumkan sebelumnya?",
+            "Apa yang menjadi penyebab adanya biaya tambahan yang tiba-tiba muncul?",
+            "Bisa tolong jelaskan kenapa saya dikenakan biaya tambahan yang tidak jelas?",
+            "Apa yang bisa menyebabkan saya menerima biaya tambahan tanpa pemberitahuan?"
+         ],
+         "responses": [
+            "Biaya tambahan mungkin terkait dengan denda keterlambatan pembayaran atau pemakaian energi di luar batas tertentu. Pastikan untuk memeriksa tagihan secara keseluruhan."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Biaya_Tidak_Sesuai",
+         "patterns": [
+            "Mengapa aplikasi PLN Mobile menunjukkan biaya yang berbeda dari tagihan fisik?",
+            "Apa yang harus saya lakukan jika biaya yang tercantum tidak sesuai dengan tagihan?",
+            "Kenapa penghitungan biaya penggunaan energi tidak cocok dengan yang tertera di aplikasi?",
+            "Bagaimana cara memverifikasi biaya yang tidak sesuai antara aplikasi dan tagihan fisik?",
+            "Apakah ada penjelasan untuk perbedaan biaya antara aplikasi dan tagihan?",
+            "Kenapa biaya pemakaian di aplikasi tidak sama dengan yang ada di tagihan saya?",
+            "Apa langkah yang harus diambil jika ada ketidaksesuaian biaya di aplikasi PLN Mobile?",
+            "Mengapa ada perbedaan antara biaya yang ditampilkan di aplikasi dan yang di tagihan fisik?",
+            "Bagaimana cara memastikan bahwa pembacaan meter tidak salah?",
+            "Apa yang harus saya lakukan jika saya mendapati biaya yang tidak sesuai di tagihan?"
+         ],
+         "responses": [
+            "Periksa kembali pembacaan meter dan pastikan tidak ada kesalahan input. Jika masih ada ketidaksesuaian, silakan laporkan ke PLN melalui aplikasi atau layanan pelanggan."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Gangguan_Teknis_Aplikasi",
+         "patterns": [
+            "Kenapa saya tidak bisa masuk ke aplikasi PLN Mobile?",
+            "Mengapa aplikasi PLN Mobile sering mengalami lag saat saya menggunakannya?",
+            "Kenapa tagihan listrik saya tidak muncul di aplikasi?",
+            "Mengapa fitur pengaduan di aplikasi tidak bisa diakses?",
+            "Kenapa saya tidak bisa melihat riwayat transaksi di aplikasi PLN Mobile?",
+            "Mengapa aplikasi PLN Mobile tidak memperbarui informasi tagihan saya?",
+            "Kenapa saya tidak menerima notifikasi pembayaran melalui aplikasi?",
+            "Mengapa fitur pembayaran di aplikasi tidak berfungsi?", 
+            "Mengapa aplikasi PLN Mobile tidak mengupdate data saya?",
+            "Kenapa saya tidak bisa mengakses fitur chat layanan pelanggan di aplikasi?"
+         ],
+         "responses": [
+            "Mungkin ada masalah teknis, coba lagi setelah beberapa saat atau hubungi layanan pelanggan Contact Center PLN melalui sambungan telepon di nomor 123 atau email pln123@pln.co.id."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Fitur_Aplikasi_PLN_Mobile",
+         "patterns": [
+            "Apa saja fitur yang tersedia di aplikasi PLN Mobile?",
+            "Fitur-fitur apa yang bisa saya gunakan di aplikasi PLN Mobile?",
+            "Bisakah Anda menjelaskan fitur-fitur yang ada di aplikasi PLN Mobile?",
+            "Apa yang ditawarkan oleh aplikasi PLN Mobile dalam hal fitur?",
+            "Fitur apa yang bisa saya akses melalui aplikasi PLN Mobile?",
+            "Dapatkah Anda memberi tahu saya tentang fitur aplikasi PLN Mobile?",
+            "Fitur apa saja yang terdapat dalam aplikasi PLN Mobile?",
+            "Bagaimana cara menggunakan fitur-fitur di aplikasi PLN Mobile?",
+            "Apa saja fungsi yang disediakan oleh aplikasi PLN Mobile?",
+            "Saya ingin tahu tentang fitur yang ada di aplikasi PLN Mobile."
+         ],
+         "responses": [
+            "1. Fitur Pembelian Token dan Pembayaran Tagihan Listrik; 2. Fitur Perubahan Daya Listrik; 3. Fitur Pencatatan Angka Meter Mandiri; 4. Fitur Pengaduan dan Keluhan; 5. Fitur Monitor Pemakaian Listrik PascaBayar; 6. Fitur Monitor Pembelian Token Listrik; 7. Fitur Notifikasi Tagihan; 8. Fitur Informasi Progres Penyelesaian Gangguan; 9. Fitur Informasi Padam dan Pemeliharaan"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "Pengenalan_Aplikasi_PLN_Mobile",
+         "patterns": [
+            "Apa itu aplikasi PLN Mobile?",
+            "Bagaimana cara menggunakan aplikasi PLN Mobile?",
+            "Apa manfaat dari aplikasi PLN Mobile bagi pelanggan?",
+            "Apa yang membuat PLN Mobile lebih praktis dibandingkan cara konvensional?"
+         ],
+         "responses": [
+            "PLN Mobile merupakan aplikasi yang memudahkan pelanggan listrik PLN untuk mendapatkan layanan listrik yang lebih praktis dan mudah diakses. Melalui aplikasi ini, pelanggan bisa memanfaatkan layanan pengaduan secara online, dan tidak harus datang ke kantor PLN untuk mengajukan penambahan daya. Selain itu, pelanggan juga mendapatkan kemudahan dalam pembelian token, serta pengecekan dan pembayaran tagihan. Aplikasi ini adalah bagian dari transformasi yang dilakukan oleh PLN untuk meningkatkan layanannya."
+         ],
+         "context_set": ""
+      }
+   ]
+}
