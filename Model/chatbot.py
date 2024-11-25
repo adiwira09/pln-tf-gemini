@@ -8,6 +8,8 @@ import tensorflow as tf
 import nltk
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
+nltk.download('punkt_tab')
+
 class Chatbot:
     def __init__(self):
         self.model = tf.keras.models.load_model("./Model/chatbot_model.h5")
