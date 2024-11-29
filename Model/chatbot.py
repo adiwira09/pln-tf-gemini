@@ -65,5 +65,6 @@ class Chatbot:
 
             Berikan respons sesuai peran Anda sebagai chatbot PLN.
             """
-            response = str(gemini_llm.invoke(prompt).content)
+            response = gemini_llm.invoke(prompt).content
+            response = response.replace('\n', ' ').strip()
             return response
